@@ -1,0 +1,17 @@
+// overriding bootstrap colors and text
+
+$primary: #111827;
+$secondary:  #18212F;
+$success: #2fcc98;
+$white:  #F3F4F6;
+$pureWhite: #9CA3AF;
+$dark: #2d353f;
+
+
+// Import Bootstrap after overriding variables
+
+
+@import "bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    
+

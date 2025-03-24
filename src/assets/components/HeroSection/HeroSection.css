@@ -1,0 +1,21 @@
+.rotateHeroImage {
+    transform: rotate(15deg);
+    display: block;
+    background: linear-gradient(45deg,  transparent);
+    transition: transform 0.5s;
+    animation: rotateMe 5500.10ms 5ms linear infinite;
+}
+
+@keyframes rotateMe {
+    0% {
+        transform: translate(0%);
+    
+    }
+/* 
+    50% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    } */
+}

@@ -1,0 +1,12 @@
+.about-height {
+    height: 900px;
+
+}
+
+.text-small {
+    font-size: medium;
+}
+
+.shadow_light {
+    box-shadow:0px 0px 15px rgb(29, 233, 29) !important;
+}

@@ -1,0 +1,7 @@
+.text-card-small {
+    font-size: small;
+}
+
+.shadow-best {
+    box-shadow: 5px 5px 15px rgb(4, 146, 4) !important;
+}
