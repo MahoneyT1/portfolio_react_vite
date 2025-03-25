@@ -12,7 +12,7 @@ const Contact = () =>  {
     const [ response, setResponse] = useState("");
 
     // hardcode the url
-    const baseUrl = "http://localhost:5000/contact";
+    const baseUrl = "https://portfolio-react-vite-backend.onrender.com/contact";
 
     const handleChange = (e) => {
         setFormData({...formData, [e.target.name]: e.target.value});
