@@ -1,8 +1,35 @@
-import heroImage from '../../images/image.png'
 import Button from '../Button/Button.jsx';
 import "./HeroSection.css"
+const heroImage = '/images/image.png'
+import { useNavigate } from 'react-router-dom';
+
 
 const HeroSection = ()=> {
+
+    const navigate = useNavigate();
+
+    // the get in touch button navigates to the contact me section
+    const handleGetInTouch = (e) => {
+        e.preventDefault();
+
+        const section = document.querySelector("#contact");
+        if (section) {
+            section.scrollIntoView({behavior: "smooth"});
+            navigate("#contact", {replace: true});
+            
+        };
+    };
+
+    // handle the view my works button
+    const viewMyWorks = (e)=> {
+        e.preventDefault();
+
+        const projectSection = document.querySelector("#projects");
+        if (projectSection) {
+            projectSection.scrollIntoView({behavior: "smooth"});
+            navigate("#projects", {replace: true});
+        };
+    };
 
     return (
         <section className='container bg-primary min-h-100 '>
@@ -43,8 +70,14 @@ const HeroSection = ()=> {
 
                     <div className='w-auto d-flex flex-row justify-content-center 
                         align-items-center mt-3 gap-3 gap-md-2 gap-lg-3 '>
-                        <Button btnName={"View my Work"} color={"success"} /> 
-                        <Button btnName={"Get in touch"} color={"primary"} /> 
+                        <Button btnName={"View my Work"} color={"success"} 
+                        onClick={viewMyWorks}/> 
+
+
+                        <Button onClick={handleGetInTouch}
+                        btnName={"Get in touch"} color={"primary"}
+                        />
+        
                     </div>
                 </div>
 

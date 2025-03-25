@@ -1,11 +1,14 @@
 import ProjectCard from "../ProjectCard/ProjectCard";
-const imageUrl = import.meta.env.BASE_URL + "src/assets/images/pizza.PNG";
+const imageUrl = "/images/pizza.PNG";
+
+
 
 const FeaturedProject = ()=> {
 
 
     return (
-        <section className="bg-dark mt-5 w-100 min-vh-80 d-flex flex-column justify-content-md-around p-0 ">
+        <section className="bg-dark mt-5 w-100 min-vh-80 d-flex flex-column justify-content-md-around p-0 "
+            id="projects">
             <div className="mb-3 text-white px-md-2 px-lg-5">
                 <h5 className="mb-4 mx-lg-0">Featured Projects</h5>
             </div>

@@ -15,11 +15,14 @@ const Main = () => {
   const location = useLocation(); // Detects route change
 
   useEffect(() => {
+
     if (location.hash) {
-      const section = document.getElementById(location.hash.substring(1));
+      const targetId = location.hash.substring(1);
+      const section = document.getElementById(targetId);
+
       if (section) {
         section.scrollIntoView({ behavior: "smooth" });  // Scrolls smoothly to section
-      }
+      };
     }
   }, [location]);
 
